@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Same-Day Technical Delivery | Yi</title>
-  <meta name="description" content="A scoped bug fix, automation, test, or technical document delivered the same day by an independent developer.">
-  <meta property="og:title" content="Same-Day Technical Delivery">
-  <meta property="og:description" content="One scoped technical result, fixed price, delivered today.">
+  <title>Same-Day Paid Trial | Yi</title>
+  <meta name="description" content="A fixed-price short script, QA pass, or small technical fix delivered within one day by an independent freelancer.">
+  <meta property="og:title" content="Same-Day Paid Trial">
+  <meta property="og:description" content="Choose one scoped result, agree the acceptance criteria, and receive it within one day.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yzangeren.github.io/same-day-technical-delivery/">
   <meta property="og:image" content="https://yzangeren.github.io/same-day-technical-delivery/assets/research-report.png">
@@ -191,9 +191,11 @@
 
     .price-grid, .proof-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 20px;
     }
+
+    .price-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
     .price-card, .proof-card {
       min-width: 0;
@@ -307,17 +309,17 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Same-Day Technical Delivery",
+    "name": "Same-Day Paid Trial",
     "email": "yizxty@gmail.com",
     "areaServed": "Worldwide",
-    "priceRange": "USD 30-60"
+    "priceRange": "USD 25-60"
   }
   </script>
 </head>
 <body>
   <header class="topbar">
     <div class="wrap">
-      <a class="brand" href="#top">Yi / Independent Developer</a>
+      <a class="brand" href="#top">Yi / Independent Freelancer</a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#scope">Scope</a>
         <a href="#proof">Proof</a>
@@ -329,11 +331,11 @@
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-content">
-        <p class="eyebrow">Available for one delivery today</p>
-        <h1 id="hero-title">Same-Day Technical Delivery</h1>
-        <p>A scoped bug fix, automation, test, API task, or technical document. Fixed price, clear acceptance criteria, and a clean handoff.</p>
+        <p class="eyebrow">One paid trial slot available today</p>
+        <h1 id="hero-title">Same-Day Paid Trial</h1>
+        <p>Choose a short script, focused QA pass, or small technical fix. Fixed price, clear acceptance criteria, and delivery within one day.</p>
         <div class="actions">
-          <a class="button" href="mailto:yizxty@gmail.com?subject=Same-day%20technical%20delivery&body=Repository%20or%20file%3A%0ADesired%20result%3A%0ADeadline%3A%0ACurrent%20blocker%3A">
+          <a class="button" href="mailto:yizxty@gmail.com?subject=Same-day%20paid%20trial&body=Service%20(script%2C%20QA%2C%20or%20technical%20fix)%3A%0ASource%20or%20reference%3A%0ADesired%20result%3A%0ADeadline%3A">
             <i data-lucide="mail" aria-hidden="true"></i>
             Send the scope
           </a>
@@ -349,27 +351,37 @@
       <div class="wrap">
         <div class="section-head">
           <h2>Pick a scoped result</h2>
-          <p>Work starts after the result, deadline, and acceptance criteria are agreed. Custom work uses a 50% deposit or funded platform escrow.</p>
+          <p>Each option is deliberately small enough to evaluate in one day. Work starts after the result, deadline, and acceptance criteria are agreed.</p>
         </div>
         <div class="price-grid">
+          <article class="price-card">
+            <p class="price-label">Short Script</p>
+            <p class="price">$25 <span>/ CNY 179</span></p>
+            <ul>
+              <li>One 150-200 word narrative or promotional script</li>
+              <li>Hook, clean story beats, and a clear payoff</li>
+              <li>Delivery within 24 hours after scope confirmation</li>
+              <li>One reasonable revision</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <p class="price-label">Focused QA Pass</p>
+            <p class="price">$25 <span>/ CNY 179</span></p>
+            <ul>
+              <li>One browser or app flow on the supplied build</li>
+              <li>Confirmed defects with steps, severity, and evidence</li>
+              <li>Separate usability observations</li>
+              <li>Concise report delivered within 24 hours</li>
+            </ul>
+          </article>
           <article class="price-card">
             <p class="price-label">Quick Fix</p>
             <p class="price">$30 <span>/ CNY 199</span></p>
             <ul>
               <li>One small JS, TS, Python, API, docs, or automation task</li>
               <li>Delivery in 6-12 hours after scope confirmation</li>
-              <li>Reproduction or verification notes</li>
+              <li>Patch plus reproduction or verification notes</li>
               <li>One reasonable revision</li>
-            </ul>
-          </article>
-          <article class="price-card featured">
-            <p class="price-label">Delivery Pack</p>
-            <p class="price">$60 <span>/ CNY 399</span></p>
-            <ul>
-              <li>Scoped fix or automation</li>
-              <li>Focused tests or browser verification</li>
-              <li>Clean patch or pull request</li>
-              <li>Handoff note and one reasonable revision</li>
             </ul>
           </article>
         </div>
@@ -395,6 +407,14 @@
             <span class="proof-icon coral"><i data-lucide="file-chart-column" aria-hidden="true"></i></span>
             <span><h3>Published research sample</h3><p>A structured technical market report with a public deliverable.</p></span>
           </a>
+          <a class="proof-card" href="https://github.com/yZangEren/short-form-script-portfolio" target="_blank" rel="noreferrer">
+            <span class="proof-icon coral"><i data-lucide="clapperboard" aria-hidden="true"></i></span>
+            <span><h3>Short-form script samples</h3><p>Six clearly labeled, self-initiated narrative and promotional samples.</p></span>
+          </a>
+          <a class="proof-card" href="https://github.com/yZangEren/qa-review-portfolio" target="_blank" rel="noreferrer">
+            <span class="proof-icon"><i data-lucide="scan-search" aria-hidden="true"></i></span>
+            <span><h3>QA review samples</h3><p>Independent reports with reproduction steps, evidence, and retest notes.</p></span>
+          </a>
           <a class="proof-card" href="https://github.com/yZangEren" target="_blank" rel="noreferrer">
             <span class="proof-icon"><i data-lucide="code-2" aria-hidden="true"></i></span>
             <span><h3>Implementation history</h3><p>Public branches, tests, patches, reviews, and delivery evidence.</p></span>
@@ -407,10 +427,10 @@
       <div class="wrap">
         <div class="section-head">
           <h2>A short path to done</h2>
-          <p>No open-ended discovery project. The first message should include the repository or file, desired result, deadline, and current blocker.</p>
+          <p>No open-ended discovery project. The first message should name the service, source or reference, desired result, and deadline.</p>
         </div>
         <div class="steps">
-          <div class="step"><h3>Send the problem</h3><p>Share the source, desired result, deadline, and constraints.</p></div>
+          <div class="step"><h3>Choose one service</h3><p>Send the source or reference, desired result, deadline, and constraints.</p></div>
           <div class="step"><h3>Confirm the scope</h3><p>Receive a fixed deliverable, price, acceptance criteria, and timing.</p></div>
           <div class="step"><h3>Fund the start</h3><p>Use a 50% deposit or a funded platform escrow.</p></div>
           <div class="step"><h3>Receive the handoff</h3><p>Get the result, verification evidence, and one reasonable revision.</p></div>
@@ -421,11 +441,11 @@
     <section id="contact" class="band-white">
       <div class="wrap contact">
         <div>
-          <h2>Send one concrete blocker.</h2>
-          <p>Payment after scope confirmation: WeChat, Alipay, USDC, or USDT. No abusive automation, fake reviews, cheating, credential access, or privacy intrusion.</p>
+          <h2>Send one concrete brief.</h2>
+          <p>Payment after scope confirmation: WeChat, Alipay, USDC, or USDT. Custom work uses a 50% deposit or funded platform escrow. No abusive automation, fake reviews, cheating, credential access, or privacy intrusion.</p>
         </div>
         <div class="actions">
-          <a class="button" href="mailto:yizxty@gmail.com?subject=Same-day%20technical%20delivery&body=Repository%20or%20file%3A%0ADesired%20result%3A%0ADeadline%3A%0ACurrent%20blocker%3A">
+          <a class="button" href="mailto:yizxty@gmail.com?subject=Same-day%20paid%20trial&body=Service%20(script%2C%20QA%2C%20or%20technical%20fix)%3A%0ASource%20or%20reference%3A%0ADesired%20result%3A%0ADeadline%3A">
             <i data-lucide="mail" aria-hidden="true"></i>
             Email Yi
           </a>
@@ -440,8 +460,8 @@
 
   <footer>
     <div class="wrap">
-      <span>Yi / Independent Developer</span>
-      <span>One scoped result. Clear verification. Clean handoff.</span>
+      <span>Yi / Independent Freelancer</span>
+      <span>One paid trial. Clear acceptance criteria. Clean handoff.</span>
     </div>
   </footer>
 

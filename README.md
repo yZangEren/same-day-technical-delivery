@@ -1,11 +1,12 @@
-# Same-Day Technical Delivery
+# Same-Day Paid Trial
 
-Public fixed-price service page for one scoped same-day technical delivery.
+Public fixed-price service page for one scoped same-day paid trial.
 
 ## Offers
 
+- Short Script: USD 25 / CNY 179.
+- Focused QA Pass: USD 25 / CNY 179.
 - Quick Fix: USD 30 / CNY 199.
-- Delivery Pack: USD 60 / CNY 399.
 - Custom work begins after a 50% deposit or funded platform escrow.
 
 ## Local preview
