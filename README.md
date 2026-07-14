@@ -11,6 +11,7 @@ Public fixed-price service page for one scoped same-day paid trial.
 
 ## Payment rails
 
+- Escrow: LaborX funded contract; work starts only after escrow is visible.
 - CNY: request the current WeChat or Alipay receiving code after scope confirmation.
 - USDC: Base network.
 - USDT: TRON network.
@@ -19,7 +20,9 @@ Public fixed-price service page for one scoped same-day paid trial.
 - TON: TON network.
 
 Do not transfer funds before the deliverable, acceptance criteria, amount, and
-network are confirmed in writing.
+network are confirmed in writing. A LaborX contract must not require Premium,
+staking, a deposit from the freelancer, paid verification, or any other
+upfront fee.
 
 ## Local preview
 
