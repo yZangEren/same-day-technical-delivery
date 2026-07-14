@@ -273,6 +273,53 @@
     .contact .button:hover { background: var(--teal-dark); }
     .contact .button.secondary { border-color: var(--ink); color: var(--ink); background: transparent; }
 
+    .payment-layout {
+      display: grid;
+      grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+      gap: 56px;
+      align-items: start;
+    }
+
+    .payment-copy p {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .payment-warning {
+      padding-left: 16px;
+      border-left: 4px solid var(--coral);
+      color: var(--ink) !important;
+      font-weight: 700;
+    }
+
+    .rail-list { border-top: 1px solid var(--line); }
+
+    .rail {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .rail strong, .rail span { display: block; }
+    .rail strong { font-size: 16px; }
+    .rail span { margin-top: 3px; color: var(--muted); font-size: 13px; }
+
+    .rail code {
+      min-width: 0;
+      color: var(--teal-dark);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .payment-action { margin-top: 24px; }
+    .payment-action .button { background: var(--teal); color: var(--white); }
+    .payment-action .button:hover { background: var(--teal-dark); }
+
     footer {
       padding: 24px 0;
       border-top: 1px solid var(--line);
@@ -290,13 +337,14 @@
       h1 { font-size: 42px; }
       .hero p { font-size: 18px; }
       section { padding: 58px 0; }
-      .section-head, .contact { grid-template-columns: 1fr; gap: 18px; }
+      .section-head, .contact, .payment-layout { grid-template-columns: 1fr; gap: 28px; }
       .price-grid, .proof-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr; }
       .step { min-height: auto; padding: 0 0 28px; }
       .step + .step { padding: 28px 0; border-left: 0; border-top: 1px solid #38504a; }
       .contact .actions { justify-content: flex-start; }
       .contact h2 { font-size: 34px; }
+      .rail { grid-template-columns: 1fr; gap: 8px; }
       footer .wrap { flex-direction: column; }
     }
 
@@ -323,6 +371,7 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="#scope">Scope</a>
         <a href="#proof">Proof</a>
+        <a href="#payment">Payment</a>
         <a class="nav-contact" href="#contact">Contact</a>
       </nav>
     </div>
@@ -438,11 +487,50 @@
       </div>
     </section>
 
+    <section id="payment" class="band-white">
+      <div class="wrap payment-layout">
+        <div class="payment-copy">
+          <h2>Pay after scope is locked</h2>
+          <p>First receive a written confirmation of the deliverable, acceptance criteria, deadline, amount, and selected payment rail.</p>
+          <p class="payment-warning">Do not transfer funds before the scope and network are confirmed in writing.</p>
+          <p>For CNY payment, request the current WeChat or Alipay receiving code in the same email thread. After crypto payment, reply with the transaction hash.</p>
+          <div class="payment-action">
+            <a class="button" href="mailto:yizxty@gmail.com?subject=Payment%20rail%20for%20paid%20trial&amp;body=Service%3A%0AConfirmed%20amount%3A%0APreferred%20rail%20(WeChat%2C%20Alipay%2C%20Base%20USDC%2C%20TRON%20USDT%2C%20SOL%2C%20BNB%2C%20or%20TON)%3A%0ATransaction%20hash%20(if%20already%20confirmed%20and%20paid)%3A">
+              <i data-lucide="wallet-cards" aria-hidden="true"></i>
+              Confirm a payment rail
+            </a>
+          </div>
+        </div>
+        <div class="rail-list" aria-label="Public crypto receiving addresses">
+          <div class="rail">
+            <div><strong>USDC</strong><span>Base network</span></div>
+            <code>0x6f9fb656247554095d2bd13f1c14ab2829c524b0</code>
+          </div>
+          <div class="rail">
+            <div><strong>USDT</strong><span>TRON network</span></div>
+            <code>TUYYoHQhoVkTbRaommDcWAoc8BMcT3J4KQ</code>
+          </div>
+          <div class="rail">
+            <div><strong>SOL</strong><span>Solana network</span></div>
+            <code>61yLtKuSbiGrVEJDR1NDY9KpUP7XXuRv3oSZF35kH3hR</code>
+          </div>
+          <div class="rail">
+            <div><strong>BNB</strong><span>BNB Smart Chain</span></div>
+            <code>0x6f9fb656247554095d2bd13f1c14ab2829c524b0</code>
+          </div>
+          <div class="rail">
+            <div><strong>TON</strong><span>TON network</span></div>
+            <code>UQBp6A1YObIr1ddKoeOh_REAxFWOAI6OGGlONd0IDY471_DH</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="band-white">
       <div class="wrap contact">
         <div>
           <h2>Send one concrete brief.</h2>
-          <p>Payment after scope confirmation: WeChat, Alipay, USDC, or USDT. Custom work uses a 50% deposit or funded platform escrow. No abusive automation, fake reviews, cheating, credential access, or privacy intrusion.</p>
+          <p>Payment after scope confirmation: WeChat, Alipay, Base USDC, TRON USDT, SOL, BNB, or TON. Custom work uses a 50% deposit or funded platform escrow. No abusive automation, fake reviews, cheating, credential access, or privacy intrusion.</p>
         </div>
         <div class="actions">
           <a class="button" href="mailto:yizxty@gmail.com?subject=Same-day%20paid%20trial&body=Service%20(script%2C%20QA%2C%20or%20technical%20fix)%3A%0ASource%20or%20reference%3A%0ADesired%20result%3A%0ADeadline%3A">

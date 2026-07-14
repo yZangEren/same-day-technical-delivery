@@ -9,6 +9,18 @@ Public fixed-price service page for one scoped same-day paid trial.
 - Quick Fix: USD 30 / CNY 199.
 - Custom work begins after a 50% deposit or funded platform escrow.
 
+## Payment rails
+
+- CNY: request the current WeChat or Alipay receiving code after scope confirmation.
+- USDC: Base network.
+- USDT: TRON network.
+- SOL: Solana network.
+- BNB: BNB Smart Chain.
+- TON: TON network.
+
+Do not transfer funds before the deliverable, acceptance criteria, amount, and
+network are confirmed in writing.
+
 ## Local preview
 
 ```powershell
