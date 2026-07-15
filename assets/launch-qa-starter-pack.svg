@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Launch QA Starter Pack cover</title>
+  <desc id="desc">A product cover showing a release checklist and an offline QA workbench.</desc>
+  <rect width="1280" height="720" fill="#f7faf9"/>
+  <rect x="0" y="0" width="34" height="720" fill="#007f64"/>
+  <rect x="34" y="0" width="1246" height="12" fill="#f3c84b"/>
+
+  <g transform="translate(96 88)">
+    <rect width="164" height="38" rx="5" fill="#14211e"/>
+    <text x="82" y="25" text-anchor="middle" fill="#ffffff" font-family="Inter,Segoe UI,sans-serif" font-size="16" font-weight="700">RELEASE QA</text>
+    <text x="0" y="114" fill="#14211e" font-family="Inter,Segoe UI,sans-serif" font-size="62" font-weight="800">Launch QA</text>
+    <text x="0" y="178" fill="#14211e" font-family="Inter,Segoe UI,sans-serif" font-size="62" font-weight="800">Starter Pack</text>
+    <text x="0" y="228" fill="#52625e" font-family="Inter,Segoe UI,sans-serif" font-size="24">A written, reusable release workflow</text>
+
+    <g transform="translate(0 286)">
+      <rect width="76" height="76" rx="8" fill="#d94f2b"/>
+      <text x="38" y="51" text-anchor="middle" fill="#ffffff" font-family="Inter,Segoe UI,sans-serif" font-size="38" font-weight="800">66</text>
+      <text x="96" y="28" fill="#14211e" font-family="Inter,Segoe UI,sans-serif" font-size="22" font-weight="750">launch checks</text>
+      <text x="96" y="59" fill="#52625e" font-family="Inter,Segoe UI,sans-serif" font-size="18">scope to handoff</text>
+    </g>
+
+    <g transform="translate(0 398)" font-family="Inter,Segoe UI,sans-serif" font-size="18" fill="#14211e">
+      <rect width="18" height="18" rx="3" fill="#007f64"/>
+      <path d="M4 9.5 8 13l6-8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="32" y="16">Offline interactive workbench</text>
+      <rect y="42" width="18" height="18" rx="3" fill="#007f64"/>
+      <path d="M4 51.5 8 55l6-8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="32" y="58">Bug, matrix, severity and handoff templates</text>
+      <rect y="84" width="18" height="18" rx="3" fill="#007f64"/>
+      <path d="M4 93.5 8 97l6-8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="32" y="100">Read-only page hygiene helper</text>
+    </g>
+  </g>
+
+  <g transform="translate(694 80)">
+    <rect width="490" height="560" rx="8" fill="#ffffff" stroke="#cfdbd7" stroke-width="3"/>
+    <rect width="490" height="78" rx="8" fill="#14211e"/>
+    <rect y="70" width="490" height="8" fill="#14211e"/>
+    <text x="28" y="34" fill="#ffffff" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="750">Launch QA Workbench</text>
+    <text x="28" y="58" fill="#b9cbc5" font-family="Inter,Segoe UI,sans-serif" font-size="13">Release readiness</text>
+    <text x="420" y="52" fill="#ffffff" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="750">0 / 66</text>
+    <rect x="28" y="98" width="434" height="8" rx="4" fill="#e3eae8"/>
+    <rect x="28" y="98" width="74" height="8" rx="4" fill="#007f64"/>
+
+    <text x="28" y="146" fill="#52625e" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="700">PROJECT</text>
+    <rect x="28" y="158" width="434" height="48" rx="6" fill="#f7faf9" stroke="#cfdbd7"/>
+    <text x="44" y="188" fill="#14211e" font-family="Inter,Segoe UI,sans-serif" font-size="16">Release candidate</text>
+
+    <g transform="translate(28 234)" font-family="Inter,Segoe UI,sans-serif">
+      <text x="0" y="20" fill="#14211e" font-size="22" font-weight="800">Scope and Environment</text>
+      <g transform="translate(0 46)">
+        <rect width="434" height="62" rx="6" fill="#f7faf9" stroke="#cfdbd7"/>
+        <rect x="18" y="21" width="20" height="20" rx="3" fill="#007f64"/>
+        <path d="M23 31l4 4 7-9" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="54" y="36" fill="#14211e" font-size="15">Record the exact release build and URL</text>
+      </g>
+      <g transform="translate(0 120)">
+        <rect width="434" height="62" rx="6" fill="#ffffff" stroke="#cfdbd7"/>
+        <rect x="18" y="21" width="20" height="20" rx="3" fill="none" stroke="#8ea29c" stroke-width="2"/>
+        <text x="54" y="36" fill="#14211e" font-size="15">Name the critical user flow</text>
+      </g>
+      <g transform="translate(0 194)">
+        <rect width="434" height="62" rx="6" fill="#ffffff" stroke="#cfdbd7"/>
+        <rect x="18" y="21" width="20" height="20" rx="3" fill="none" stroke="#8ea29c" stroke-width="2"/>
+        <text x="54" y="36" fill="#14211e" font-size="15">Agree supported devices and browsers</text>
+      </g>
+    </g>
+
+    <rect x="28" y="520" width="130" height="3" fill="#d94f2b"/>
+    <text x="28" y="548" fill="#52625e" font-family="Inter,Segoe UI,sans-serif" font-size="13">Local progress. Markdown export. No account.</text>
+  </g>
+</svg>

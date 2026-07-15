@@ -214,6 +214,39 @@
     ul { margin: 0; padding-left: 20px; }
     li + li { margin-top: 9px; }
 
+    .product-layout {
+      display: grid;
+      grid-template-columns: minmax(320px, .92fr) minmax(0, 1.08fr);
+      gap: 56px;
+      align-items: center;
+    }
+
+    .product-art {
+      width: 100%;
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .product-kicker {
+      margin: 0 0 12px;
+      color: var(--coral);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .product-lead { margin: 18px 0 0; color: var(--muted); font-size: 18px; }
+    .product-price { margin: 24px 0; font-size: 38px; line-height: 1; font-weight: 820; }
+    .product-price span { color: var(--muted); font-size: 15px; font-weight: 650; }
+    .product-actions { margin-top: 28px; }
+    .product-actions .button { background: var(--teal); color: var(--white); }
+    .product-actions .button:hover { background: var(--teal-dark); }
+    .product-actions .button.secondary { border-color: var(--ink); color: var(--ink); background: transparent; }
+    .product-note { margin: 18px 0 0; color: var(--muted); font-size: 14px; }
+
     .proof-card {
       display: grid;
       grid-template-columns: 62px minmax(0, 1fr);
@@ -337,7 +370,7 @@
       h1 { font-size: 42px; }
       .hero p { font-size: 18px; }
       section { padding: 58px 0; }
-      .section-head, .contact, .payment-layout { grid-template-columns: 1fr; gap: 28px; }
+      .section-head, .contact, .payment-layout, .product-layout { grid-template-columns: 1fr; gap: 28px; }
       .price-grid, .proof-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr; }
       .step { min-height: auto; padding: 0 0 28px; }
@@ -370,6 +403,7 @@
       <a class="brand" href="#top">Yi / Independent Freelancer</a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#scope">Scope</a>
+        <a href="#product">Product</a>
         <a href="#proof">Proof</a>
         <a href="#payment">Payment</a>
         <a class="nav-contact" href="#contact">Contact</a>
@@ -433,6 +467,34 @@
               <li>One reasonable revision</li>
             </ul>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="wrap product-layout">
+        <img class="product-art" src="assets/launch-qa-starter-pack.svg" alt="Launch QA Starter Pack with a 66-point checklist and offline workbench">
+        <div>
+          <p class="product-kicker">Reusable product · no custom scope required</p>
+          <h2>Launch QA Starter Pack</h2>
+          <p class="product-lead">Run one focused release pass with a 66-point checklist, an offline interactive workbench, structured defect templates, and a read-only page hygiene helper.</p>
+          <p class="product-price">$25 <span>/ CNY 179</span></p>
+          <ul>
+            <li>Local progress, completion filters, print layout, and Markdown export</li>
+            <li>Bug report, test matrix, findings register, severity, and handoff templates</li>
+            <li>Single-buyer internal-use license and email support</li>
+          </ul>
+          <div class="actions product-actions">
+            <a class="button" href="mailto:yizxty@gmail.com?subject=Launch%20QA%20Starter%20Pack&amp;body=I%20want%20the%20Launch%20QA%20Starter%20Pack.%0APreferred%20payment%20rail%3A%0ADelivery%20email%3A">
+              <i data-lucide="package-check" aria-hidden="true"></i>
+              Request the full pack
+            </a>
+            <a class="button secondary" href="preview/launch-qa-starter-pack-preview.html">
+              <i data-lucide="eye" aria-hidden="true"></i>
+              Read the preview
+            </a>
+          </div>
+          <p class="product-note">The full ZIP is delivered by email after the product, amount, payment rail, and delivery address are confirmed in writing and payment is independently verified.</p>
         </div>
       </div>
     </section>
