@@ -34,7 +34,7 @@
       "price": "25",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "url": "https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-qa-starter-pack.html"
+      "url": "https://launchqalab.itch.io/launch-qa-starter-pack"
     }
   }
   </script>
@@ -78,8 +78,11 @@
     .lead { margin: 20px 0 0; color: var(--muted); font-size: 19px; }
     .price { margin: 26px 0 0; font-size: 36px; font-weight: 820; }
     .price span { color: var(--muted); font-size: 16px; font-weight: 650; }
-    .button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; margin-top: 26px; padding: 11px 18px; border-radius: 6px; background: var(--teal); color: var(--white); font-weight: 760; text-decoration: none; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: 11px 18px; border: 1px solid var(--teal); border-radius: 6px; background: var(--teal); color: var(--white); font-weight: 760; text-decoration: none; }
     .button:hover { background: var(--teal-dark); }
+    .button.secondary { background: transparent; color: var(--teal-dark); }
+    .button.secondary:hover { background: #e8f4f1; }
     .band { margin-top: 64px; padding: 54px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--white); }
     .band p { margin: 16px 0 0; color: var(--muted); font-size: 18px; }
     .checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 34px; margin: 32px 0 0; padding: 0; list-style: none; }
@@ -119,7 +122,10 @@
         <h1>Launch QA Starter Pack</h1>
         <p class="lead">A reusable written workflow for one focused website or web-app release pass. It helps a small team record coverage, reproduce defects, set severity consistently, and hand results to engineering.</p>
         <p class="price">$25 <span>/ CNY 179</span></p>
-        <a class="button" href="../checkout/launch-qa-starter-pack.html">Buy with crypto</a>
+        <div class="actions">
+          <a class="button" href="https://launchqalab.itch.io/launch-qa-starter-pack">Buy on itch.io</a>
+          <a class="button secondary" href="../checkout/launch-qa-starter-pack.html">Pay with crypto</a>
+        </div>
       </div>
       <img src="../assets/launch-qa-starter-pack.svg" alt="Launch QA Starter Pack with a 66-point checklist and offline workbench">
     </div>
@@ -159,8 +165,8 @@
         </ul>
       </div>
       <aside class="note">
-        <strong>Delivery after verified payment</strong>
-        <span>Pay 25 USDC on Base or 25 USDT on TRON from the checkout page. The full ZIP is delivered by email after payment is independently verified.</span>
+        <strong>Choose hosted or direct checkout</strong>
+        <span>itch.io provides hosted checkout and automatic ZIP delivery. Direct payment is also available as 25 USDC on Base or 25 USDT on TRON, with email delivery after verification.</span>
       </aside>
     </div>
   </main>
