@@ -9,6 +9,16 @@ Public fixed-price service page for one scoped same-day paid trial.
 - Quick Fix: USD 30 / CNY 199.
 - Custom work begins after a 50% deposit or funded platform escrow.
 
+## Digital product
+
+- Launch QA Starter Pack: USD 25 / CNY 179.
+- Includes a 66-point launch checklist, an offline interactive workbench,
+  structured QA templates, and a read-only page hygiene helper.
+- Public preview:
+  https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-starter-pack-preview.html
+- The full ZIP is delivered by email only after the product, amount, payment
+  rail, delivery email, and verified payment are confirmed.
+
 ## Payment rails
 
 - Escrow: LaborX funded contract; work starts only after escrow is visible.
