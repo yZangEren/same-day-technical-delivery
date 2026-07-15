@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Launch QA Sample Workbench</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --ink: #13211e;
+      --muted: #5a6864;
+      --paper: #f4f8f6;
+      --white: #ffffff;
+      --line: #ccd9d5;
+      --teal: #007f64;
+      --teal-dark: #005b48;
+      --coral: #dc4f2b;
+      --yellow: #f2c94c;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+      letter-spacing: 0;
+    }
+    button, input { font: inherit; }
+    button, input[type="checkbox"] { cursor: pointer; }
+    a { color: var(--teal-dark); }
+    .wrap { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
+
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: var(--white);
+    }
+    .topbar .wrap {
+      display: flex;
+      min-height: 104px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .eyebrow {
+      margin: 0 0 5px;
+      color: var(--coral);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    h1, h2 { margin: 0; letter-spacing: 0; }
+    h1 { font-size: 30px; line-height: 1.1; }
+    h2 { font-size: 17px; }
+    .progress-summary { min-width: 132px; text-align: right; }
+    .progress-summary strong { display: block; font-size: 25px; }
+    .progress-summary span { color: var(--muted); font-size: 12px; }
+    .progress-track { height: 5px; background: #dce6e3; }
+    .progress-fill { width: 0; height: 100%; background: var(--teal); transition: width 160ms ease; }
+
+    main { padding: 30px 0 48px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) auto auto;
+      gap: 16px;
+      align-items: end;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .field label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 800; }
+    .field input {
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 11px;
+      border: 1px solid #aebfba;
+      border-radius: 5px;
+      background: var(--white);
+      color: var(--ink);
+    }
+    .field input:focus, button:focus-visible, a:focus-visible {
+      outline: 3px solid rgba(242, 201, 76, .8);
+      outline-offset: 2px;
+    }
+    .filters { display: flex; min-height: 42px; }
+    .filters button, .reset {
+      min-height: 42px;
+      padding: 8px 13px;
+      border: 1px solid #9fb3ad;
+      background: var(--white);
+      color: var(--ink);
+      font-weight: 730;
+    }
+    .filters button:first-child { border-radius: 5px 0 0 5px; }
+    .filters button:last-child { border-radius: 0 5px 5px 0; }
+    .filters button + button { border-left: 0; }
+    .filters button[aria-pressed="true"] { border-color: var(--teal); background: var(--teal); color: var(--white); }
+    .reset { min-width: 76px; border-radius: 5px; color: #8d321a; }
+    .reset:hover { background: #fff1ec; }
+
+    .checklist { display: grid; gap: 28px; padding-top: 30px; }
+    .check-group { min-width: 0; }
+    .group-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .group-mark { width: 8px; height: 20px; border-radius: 2px; background: var(--yellow); }
+    .check-list { border-top: 1px solid var(--line); }
+    .check {
+      display: grid;
+      grid-template-columns: 22px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      padding: 16px 12px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .55);
+    }
+    .check:hover { background: var(--white); }
+    .check input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--teal); }
+    .check span { overflow-wrap: anywhere; }
+    .check.is-done span { color: var(--muted); text-decoration: line-through; }
+    .check[hidden] { display: none; }
+
+    .full-pack {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 36px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+    .full-pack strong, .full-pack span { display: block; }
+    .full-pack span { margin-top: 4px; color: var(--muted); font-size: 13px; }
+    .full-pack a {
+      flex: 0 0 auto;
+      min-height: 42px;
+      padding: 10px 14px;
+      border-radius: 5px;
+      background: var(--teal);
+      color: var(--white);
+      font-weight: 760;
+      text-decoration: none;
+    }
+    .full-pack a:hover { background: var(--teal-dark); }
+
+    @media (max-width: 680px) {
+      .wrap { width: min(100% - 24px, 980px); }
+      .topbar .wrap { min-height: 92px; }
+      h1 { font-size: 24px; }
+      .progress-summary { min-width: 100px; }
+      .toolbar { grid-template-columns: 1fr; align-items: stretch; }
+      .filters { width: 100%; }
+      .filters button { flex: 1 1 0; }
+      .reset { width: 100%; }
+      .check { padding-inline: 8px; }
+      .full-pack { align-items: stretch; flex-direction: column; }
+      .full-pack a { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Release QA sample</p>
+        <h1>Launch QA Workbench</h1>
+      </div>
+      <div class="progress-summary" aria-live="polite">
+        <strong id="progress-count">0 / 12</strong>
+        <span>sample checks done</span>
+      </div>
+    </div>
+    <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+  </header>
+
+  <main class="wrap">
+    <section class="toolbar" aria-label="Workbench controls">
+      <div class="field">
+        <label for="project-name">Project</label>
+        <input id="project-name" type="text" maxlength="120" placeholder="Release candidate or URL">
+      </div>
+      <div class="filters" role="group" aria-label="Filter checks">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="open" aria-pressed="false">Open</button>
+        <button type="button" data-filter="done" aria-pressed="false">Done</button>
+      </div>
+      <button class="reset" id="reset" type="button">Reset</button>
+    </section>
+
+    <div class="checklist" id="checklist">
+      <section class="check-group">
+        <div class="group-head"><span class="group-mark" aria-hidden="true"></span><h2>Scope And Core Flow</h2></div>
+        <div class="check-list">
+          <label class="check"><input type="checkbox" data-id="scope-build"><span>Record the exact build, URL, and critical user flow before testing.</span></label>
+          <label class="check"><input type="checkbox" data-id="flow-success"><span>Confirm success ends in an unambiguous state.</span></label>
+          <label class="check"><input type="checkbox" data-id="flow-repeat"><span>Verify repeated submission does not create unintended duplicates.</span></label>
+          <label class="check"><input type="checkbox" data-id="flow-preserve"><span>Preserve user-entered content after recoverable validation errors.</span></label>
+        </div>
+      </section>
+
+      <section class="check-group">
+        <div class="group-head"><span class="group-mark" aria-hidden="true"></span><h2>Responsive And Accessible UI</h2></div>
+        <div class="check-list">
+          <label class="check"><input type="checkbox" data-id="mobile-scroll"><span>Check for unintended horizontal scrolling at 320 px width.</span></label>
+          <label class="check"><input type="checkbox" data-id="mobile-sticky"><span>Keep sticky UI from hiding the active input or primary action.</span></label>
+          <label class="check"><input type="checkbox" data-id="a11y-keyboard"><span>Reach every control with a keyboard and verify visible focus.</span></label>
+          <label class="check"><input type="checkbox" data-id="a11y-icons"><span>Give every icon-only button an accessible name.</span></label>
+        </div>
+      </section>
+
+      <section class="check-group">
+        <div class="group-head"><span class="group-mark" aria-hidden="true"></span><h2>Reliability And Handoff</h2></div>
+        <div class="check-list">
+          <label class="check"><input type="checkbox" data-id="a11y-state"><span>Expose expanded or collapsed state programmatically.</span></label>
+          <label class="check"><input type="checkbox" data-id="reliability-impact"><span>Tie new console or network failures to visible impact.</span></label>
+          <label class="check"><input type="checkbox" data-id="metadata-hash"><span>Verify every in-page hash link has a real target.</span></label>
+          <label class="check"><input type="checkbox" data-id="handoff-gaps"><span>Record coverage gaps and deferred risks in the final handoff.</span></label>
+        </div>
+      </section>
+    </div>
+
+    <section class="full-pack">
+      <div>
+        <strong>Continue with the complete workflow</strong>
+        <span>66 checks, export, print layout, and reusable QA templates.</span>
+      </div>
+      <a href="https://launchqalab.itch.io/launch-qa-starter-pack">View the full pack</a>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const key = "launch-qa-sample-v1";
+      const boxes = [...document.querySelectorAll("input[type='checkbox'][data-id]")];
+      const checks = [...document.querySelectorAll(".check")];
+      const groups = [...document.querySelectorAll(".check-group")];
+      const project = document.querySelector("#project-name");
+      const progressCount = document.querySelector("#progress-count");
+      const progressFill = document.querySelector("#progress-fill");
+      const filterButtons = [...document.querySelectorAll("[data-filter]")];
+      const reset = document.querySelector("#reset");
+      let filter = "all";
+      let state = { project: "", checks: {} };
+
+      try {
+        state = { ...state, ...JSON.parse(localStorage.getItem(key) || "{}") };
+      } catch (_) {
+        state = { project: "", checks: {} };
+      }
+
+      const save = () => localStorage.setItem(key, JSON.stringify(state));
+
+      const render = () => {
+        boxes.forEach((box) => {
+          box.checked = Boolean(state.checks[box.dataset.id]);
+          const row = box.closest(".check");
+          row.classList.toggle("is-done", box.checked);
+          row.hidden = filter === "open" ? box.checked : filter === "done" ? !box.checked : false;
+        });
+        groups.forEach((group) => {
+          const rows = [...group.querySelectorAll(".check")];
+          group.hidden = rows.every((row) => row.hidden);
+        });
+        const done = boxes.filter((box) => box.checked).length;
+        progressCount.textContent = `${done} / ${boxes.length}`;
+        progressFill.style.width = `${(done / boxes.length) * 100}%`;
+        filterButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.filter === filter)));
+      };
+
+      project.value = state.project || "";
+      project.addEventListener("input", () => {
+        state.project = project.value;
+        save();
+      });
+
+      boxes.forEach((box) => box.addEventListener("change", () => {
+        state.checks[box.dataset.id] = box.checked;
+        save();
+        render();
+      }));
+
+      filterButtons.forEach((button) => button.addEventListener("click", () => {
+        filter = button.dataset.filter;
+        render();
+      }));
+
+      reset.addEventListener("click", () => {
+        if (!window.confirm("Clear this sample's project name and progress?")) return;
+        state = { project: "", checks: {} };
+        project.value = "";
+        save();
+        render();
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
