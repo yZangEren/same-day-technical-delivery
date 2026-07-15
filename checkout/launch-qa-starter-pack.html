@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Launch QA Starter Pack | Yi</title>
+  <meta name="description" content="Buy the Launch QA Starter Pack for 25 USDC on Base or 25 USDT on TRON, then email the transaction hash for verified delivery.">
+  <meta property="og:title" content="Buy Launch QA Starter Pack">
+  <meta property="og:description" content="A fixed-price 66-point launch QA pack. Pay 25 USDC on Base or 25 USDT on TRON and receive the full ZIP after verification.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-qa-starter-pack.html">
+  <meta property="og:image" content="https://yzangeren.github.io/same-day-technical-delivery/assets/launch-qa-starter-pack.png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Buy Launch QA Starter Pack">
+  <meta name="twitter:description" content="Pay 25 USDC on Base or 25 USDT on TRON. Delivery follows independent on-chain verification.">
+  <meta name="twitter:image" content="https://yzangeren.github.io/same-day-technical-delivery/assets/launch-qa-starter-pack.png">
+  <link rel="canonical" href="https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-qa-starter-pack.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%228%22 fill=%22%23007f64%22/><path d=%22M18 18h28v8H34v20h-8V26h-8z%22 fill=%22white%22/></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Launch QA Starter Pack",
+    "description": "A 66-point release checklist, offline interactive workbench, defect templates, severity scorecard, handoff template, and read-only page hygiene helper.",
+    "image": "https://yzangeren.github.io/same-day-technical-delivery/assets/launch-qa-starter-pack.png",
+    "brand": {
+      "@type": "Brand",
+      "name": "Yi"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "25",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-qa-starter-pack.html"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #14211e;
+      --muted: #52625e;
+      --paper: #f7faf9;
+      --white: #ffffff;
+      --line: #cfdbd7;
+      --teal: #007f64;
+      --teal-dark: #005945;
+      --coral: #d94f2b;
+      --yellow: #f3c84b;
+      --soft-teal: #e4f3ee;
+      --soft-coral: #f9e7e1;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .topbar .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand { font-weight: 800; text-decoration: none; }
+    .back { color: var(--teal-dark); font-size: 14px; font-weight: 720; }
+
+    section { padding: 64px 0; }
+    section + section { border-top: 1px solid var(--line); }
+    .band-white { background: var(--white); }
+    .band-ink { background: var(--ink); color: var(--white); }
+
+    .order-summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr);
+      gap: 56px;
+      align-items: center;
+    }
+
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--coral);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { margin: 0; letter-spacing: 0; }
+    h1 { max-width: 720px; font-size: 46px; line-height: 1.08; }
+    h2 { font-size: 32px; line-height: 1.15; }
+    h3 { font-size: 22px; line-height: 1.2; }
+
+    .lead { max-width: 700px; margin: 20px 0 0; color: var(--muted); font-size: 18px; }
+
+    .order-price {
+      padding-left: 32px;
+      border-left: 5px solid var(--yellow);
+    }
+
+    .order-price strong { display: block; font-size: 46px; line-height: 1; }
+    .order-price span { display: block; margin-top: 10px; color: var(--muted); font-weight: 650; }
+
+    .included {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .included li {
+      min-width: 0;
+      padding-top: 16px;
+      border-top: 3px solid var(--teal);
+      color: var(--muted);
+    }
+
+    .included strong { display: block; margin-bottom: 5px; color: var(--ink); }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .75fr) minmax(300px, 1.25fr);
+      gap: 48px;
+      align-items: start;
+      margin-bottom: 36px;
+    }
+
+    .section-head p { margin: 0; color: var(--muted); font-size: 17px; }
+
+    .network-warning {
+      margin-bottom: 28px;
+      padding: 18px 20px;
+      border-left: 5px solid var(--coral);
+      background: var(--soft-coral);
+      font-weight: 700;
+    }
+
+    .rail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .payment-card {
+      min-width: 0;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--white);
+    }
+
+    .rail-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .rail-heading p { margin: 5px 0 0; color: var(--muted); }
+
+    .amount {
+      flex: 0 0 auto;
+      color: var(--teal-dark);
+      font-size: 24px;
+      font-weight: 820;
+      white-space: nowrap;
+    }
+
+    .qr {
+      width: min(100%, 360px);
+      aspect-ratio: 3 / 5;
+      display: block;
+      margin: 0 auto 22px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--white);
+      object-fit: contain;
+    }
+
+    .address-label { display: block; margin-bottom: 8px; font-size: 13px; font-weight: 780; }
+
+    .address-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: stretch;
+    }
+
+    .address-row input {
+      min-width: 0;
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+    }
+
+    .copy-button, .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 760;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .copy-button { border-color: var(--ink); background: transparent; color: var(--ink); }
+    .copy-button:hover { border-color: var(--teal); color: var(--teal-dark); }
+    .copy-button svg, .button svg { width: 18px; height: 18px; }
+
+    .rail-note { margin: 16px 0 0; color: var(--muted); font-size: 14px; }
+    .rail-note strong { color: var(--ink); }
+
+    .after-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(320px, 1.1fr);
+      gap: 56px;
+      align-items: start;
+    }
+
+    .after-grid p { color: #b9cbc5; }
+    .after-grid ol { margin: 0; padding-left: 22px; color: #dce7e3; }
+    .after-grid li + li { margin-top: 12px; }
+
+    .button { background: var(--yellow); color: #1d2a26; }
+    .button:hover { background: #ffdc6a; }
+    .after-action { margin-top: 26px; }
+
+    .delivery-note {
+      margin-top: 28px;
+      padding-left: 18px;
+      border-left: 4px solid var(--yellow);
+      color: #dce7e3;
+      font-size: 14px;
+    }
+
+    .status {
+      min-height: 24px;
+      margin: 12px 0 0;
+      color: var(--teal-dark);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer .wrap { display: flex; justify-content: space-between; gap: 20px; }
+
+    @media (max-width: 780px) {
+      .wrap { width: min(100% - 28px, 1080px); }
+      section { padding: 48px 0; }
+      .order-summary, .section-head, .after-grid { grid-template-columns: 1fr; gap: 28px; }
+      h1 { font-size: 38px; }
+      .order-price { padding: 18px 0 0; border-left: 0; border-top: 5px solid var(--yellow); }
+      .included, .rail-grid { grid-template-columns: 1fr; }
+      .payment-card { padding: 22px; }
+      .rail-heading { align-items: flex-start; }
+      .address-row { grid-template-columns: 1fr; }
+      .copy-button { width: 100%; }
+      footer .wrap { flex-direction: column; }
+    }
+
+    @media (max-width: 420px) {
+      .topbar .wrap { align-items: flex-start; flex-direction: column; padding: 16px 0; gap: 4px; }
+      h1 { font-size: 34px; }
+      .rail-heading { display: block; }
+      .amount { margin-top: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="../">Yi / Independent Freelancer</a>
+      <a class="back" href="../preview/launch-qa-starter-pack-preview.html">Review product preview</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="band-white">
+      <div class="wrap">
+        <div class="order-summary">
+          <div>
+            <p class="kicker">Fixed-price digital product</p>
+            <h1>Launch QA Starter Pack</h1>
+            <p class="lead">A complete 66-point launch checklist, offline workbench, defect templates, severity guidance, and structured handoff files for one buyer's internal use.</p>
+          </div>
+          <div class="order-price" aria-label="Product price">
+            <strong>USD 25</strong>
+            <span>Pay as 25 USDC or 25 USDT</span>
+          </div>
+        </div>
+        <ul class="included">
+          <li><strong>Immediate-ready ZIP</strong>The complete product is already built and is not a custom commission.</li>
+          <li><strong>Two payment rails</strong>Choose Base USDC or TRON USDT. Do not mix networks.</li>
+          <li><strong>Verified delivery</strong>The ZIP is emailed after the on-chain payment is independently confirmed.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="payment-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="payment-title">Choose one payment rail</h2>
+          <p>Send exactly one payment using one option below. Your wallet pays its network fee separately. The complete text address is authoritative; compare it before confirming the transfer.</p>
+        </div>
+
+        <div class="network-warning" role="note">
+          Send only the named asset on the named network. Do not use Ethereum mainnet, BNB Smart Chain, Polygon, Solana, TON, or another network for this purchase.
+        </div>
+
+        <div class="rail-grid">
+          <article class="payment-card">
+            <div class="rail-heading">
+              <div>
+                <h3>USDC on Base</h3>
+                <p>Base network only</p>
+              </div>
+              <div class="amount">25 USDC</div>
+            </div>
+            <img class="qr" src="../assets/payment/base-usdc-okx.jpg" alt="OKX Wallet Base USDC receiving QR for Yi">
+            <label class="address-label" for="base-address">Base receiving address</label>
+            <div class="address-row">
+              <input id="base-address" type="text" readonly value="0x6f9fb656247554095d2bd13f1c14ab2829c524b0">
+              <button class="copy-button" type="button" data-copy="base-address" data-label="Base address" title="Copy Base address">
+                <i data-lucide="copy" aria-hidden="true"></i>
+                Copy address
+              </button>
+            </div>
+            <p class="rail-note"><strong>QR detail:</strong> this official OKX Wallet QR opens an OKX receiving link. Verify that your wallet shows Base, USDC, and the exact text address above before sending.</p>
+          </article>
+
+          <article class="payment-card">
+            <div class="rail-heading">
+              <div>
+                <h3>USDT on TRON</h3>
+                <p>TRON / TRC20 only</p>
+              </div>
+              <div class="amount">25 USDT</div>
+            </div>
+            <img class="qr" src="../assets/payment/tron-usdt-okx.jpg" alt="OKX Wallet TRON USDT receiving QR for Yi">
+            <label class="address-label" for="tron-address">TRON receiving address</label>
+            <div class="address-row">
+              <input id="tron-address" type="text" readonly value="TUYYoHQhoVkTbRaommDcWAoc8BMcT3J4KQ">
+              <button class="copy-button" type="button" data-copy="tron-address" data-label="TRON address" title="Copy TRON address">
+                <i data-lucide="copy" aria-hidden="true"></i>
+                Copy address
+              </button>
+            </div>
+            <p class="rail-note"><strong>QR detail:</strong> this QR directly encodes the TRON address above. Select USDT on TRON / TRC20 and compare the complete address before sending.</p>
+          </article>
+        </div>
+        <p id="copy-status" class="status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="band-ink" aria-labelledby="after-title">
+      <div class="wrap after-grid">
+        <div>
+          <h2 id="after-title">After payment</h2>
+          <p>Payment is not automatically detected by this page. Send the transaction hash and delivery email so the receipt can be independently verified.</p>
+          <div class="after-action">
+            <a class="button" href="mailto:yizxty@gmail.com?subject=Launch%20QA%20Starter%20Pack%20payment&amp;body=Product%3A%20Launch%20QA%20Starter%20Pack%0APayment%20rail%20(Base%20USDC%20or%20TRON%20USDT)%3A%0AAmount%20sent%3A%2025%0ATransaction%20hash%3A%0ADelivery%20email%3A">
+              <i data-lucide="mail-check" aria-hidden="true"></i>
+              Send payment details
+            </a>
+          </div>
+          <p class="delivery-note">The full ZIP remains private until payment is verified. This page never asks for a seed phrase, private key, wallet export, or spending approval.</p>
+        </div>
+        <ol>
+          <li>Complete one transfer for exactly 25 USDC on Base or 25 USDT on TRON.</li>
+          <li>Copy the successful transaction hash from your wallet.</li>
+          <li>Email the rail, amount, transaction hash, and delivery email using the button.</li>
+          <li>Receive the complete ZIP after the on-chain receipt and amount are confirmed.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Independent product by Yi</span>
+      <span>Support: yizxty@gmail.com</span>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>
+    if (window.lucide) lucide.createIcons();
+
+    const copyStatus = document.getElementById("copy-status");
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const input = document.getElementById(button.dataset.copy);
+        try {
+          await navigator.clipboard.writeText(input.value);
+          copyStatus.textContent = `${button.dataset.label} copied. Compare it in your wallet before sending.`;
+        } catch (error) {
+          input.focus();
+          input.select();
+          copyStatus.textContent = `Copy was blocked. The ${button.dataset.label.toLowerCase()} is selected for manual copy.`;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

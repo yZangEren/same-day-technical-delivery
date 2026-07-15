@@ -16,6 +16,11 @@ Public fixed-price service page for one scoped same-day paid trial.
   structured QA templates, and a read-only page hygiene helper.
 - Public preview:
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-starter-pack-preview.html
+- Fixed-price crypto checkout:
+  https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-qa-starter-pack.html
+- Checkout accepts exactly 25 USDC on Base or 25 USDT on TRON. The page shows
+  the complete text addresses, verified QR assets, and a payment-detail email
+  template. It does not claim automatic payment detection or fulfillment.
 - The full ZIP is delivered by email only after the product, amount, payment
   rail, delivery email, and verified payment are confirmed.
 
