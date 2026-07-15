@@ -16,6 +16,8 @@ Public fixed-price service page for one scoped same-day paid trial.
   structured QA templates, and a read-only page hygiene helper.
 - Public preview:
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-starter-pack-preview.html
+- Interactive 12-check sample:
+  https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-sample.html
 - Hosted checkout with automatic ZIP delivery:
   https://launchqalab.itch.io/launch-qa-starter-pack
 - Direct fixed-price crypto checkout:
