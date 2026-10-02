@@ -8,7 +8,11 @@ Public fixed-price service page for one scoped same-day paid trial.
 - Focused QA Pass: USD 25 / CNY 179.
 - Quick Fix: USD 30 / CNY 199.
 - Release QA Package: USD 120 / CNY 858; 48-hour critical-flow and API regression pass with retest and release recommendation.
+- Launch Weekend QA: USD 250 / CNY 1,790; 72-hour critical-flow and API regression pass with evidence, retest, and release recommendation.
 - Custom work begins after a 50% deposit or funded platform escrow.
+
+The Launch Weekend QA service is also available through Contra:
+https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
 
 ## Digital product
 
