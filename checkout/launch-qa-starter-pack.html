@@ -160,6 +160,23 @@
       font-weight: 700;
     }
 
+    .local-payment {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 20px;
+      align-items: center;
+      margin: 0 0 28px;
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--soft-teal);
+    }
+
+    .local-payment p { margin: 0; color: var(--muted); }
+    .local-payment strong { display: block; margin-bottom: 4px; color: var(--ink); }
+    .local-payment .button { border-color: var(--teal-dark); background: var(--teal); color: var(--white); white-space: nowrap; }
+    .local-payment .button:hover { background: var(--teal-dark); }
+
     .rail-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -299,6 +316,8 @@
       .rail-heading { align-items: flex-start; }
       .address-row { grid-template-columns: 1fr; }
       .copy-button { width: 100%; }
+      .local-payment { grid-template-columns: 1fr; }
+      .local-payment .button { width: 100%; }
       footer .wrap { flex-direction: column; }
     }
 
@@ -353,6 +372,11 @@
 
         <div class="network-warning" role="note">
           Send only the named asset on the named network. Do not use Ethereum mainnet, BNB Smart Chain, Polygon, Solana, TON, or another network for this purchase.
+        </div>
+
+        <div class="local-payment" role="note">
+          <p><strong>Prefer WeChat or Alipay?</strong>China-based buyers can request a local payment option. Email your delivery address and preferred method; the current CNY amount and instructions will be confirmed in writing before payment.</p>
+          <a class="button" href="mailto:yizxty@gmail.com?subject=WeChat%20or%20Alipay%20payment%20for%20Launch%20QA%20Starter%20Pack&amp;body=Product%3A%20Launch%20QA%20Starter%20Pack%0ADelivery%20email%3A%0APreferred%20method%20(WeChat%20or%20Alipay)%3A%0A">Request local payment</a>
         </div>
 
         <div class="rail-grid">
@@ -411,7 +435,7 @@
               Send payment details
             </a>
           </div>
-          <p class="delivery-note">The full ZIP remains private until payment is verified. This page never asks for a seed phrase, private key, wallet export, or spending approval.</p>
+          <p class="delivery-note">The full ZIP remains private until payment is verified. Delivery is sent by email within one business day after the payment and delivery details are confirmed. This page never asks for a seed phrase, private key, wallet export, or spending approval.</p>
         </div>
         <ol>
           <li>Complete one transfer for exactly 25 USDC on Base or 25 USDT on TRON.</li>
