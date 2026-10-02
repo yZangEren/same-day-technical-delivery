@@ -23,7 +23,7 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-starter-pack-preview.html
 - Interactive 12-check sample:
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-sample.html
-- Hosted checkout with automatic ZIP delivery:
+- Hosted buyer checkout (seller payout availability not independently verified):
   https://launchqalab.itch.io/launch-qa-starter-pack
 - Public evaluation release (v1.1.0):
   https://github.com/yZangEren/same-day-technical-delivery/releases/tag/v1.1.0
@@ -37,7 +37,7 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
 
 ## Payment rails
 
-- Escrow: LaborX funded contract; work starts only after escrow is visible.
+- Escrow: use only a visible, funded platform contract; work starts only after the funding is verifiable.
 - CNY: request the current WeChat or Alipay receiving code after scope confirmation.
 - USDC: Base network.
 - USDT: TRON network.
@@ -46,9 +46,9 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
 - TON: TON network.
 
 Do not transfer funds before the deliverable, acceptance criteria, amount, and
-network are confirmed in writing. A LaborX contract must not require Premium,
-staking, a deposit from the freelancer, paid verification, or any other
-upfront fee.
+network are confirmed in writing. A platform contract must not require a
+premium subscription, staking, a deposit from the freelancer, paid
+verification, or any other upfront fee.
 
 ## Local preview
 
