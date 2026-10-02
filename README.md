@@ -21,6 +21,8 @@ Public fixed-price service page for one scoped same-day paid trial.
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-sample.html
 - Hosted checkout with automatic ZIP delivery:
   https://launchqalab.itch.io/launch-qa-starter-pack
+- Public evaluation release (v1.1.0):
+  https://github.com/yZangEren/same-day-technical-delivery/releases/tag/v1.1.0
 - Direct fixed-price crypto checkout:
   https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-qa-starter-pack.html
 - Checkout accepts exactly 25 USDC on Base or 25 USDT on TRON. The page shows
