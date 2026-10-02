@@ -32,6 +32,8 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
 - Checkout accepts exactly 25 USDC on Base or 25 USDT on TRON. The page shows
   the complete text addresses, verified QR assets, and a payment-detail email
   template. It does not claim automatic payment detection or fulfillment.
+- China-based buyers can request current WeChat or Alipay payment instructions
+  from the checkout page; the CNY amount is confirmed in writing before payment.
 - The full ZIP is delivered by email only after the product, amount, payment
   rail, delivery email, and verified payment are confirmed.
 
