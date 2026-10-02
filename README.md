@@ -7,6 +7,7 @@ Public fixed-price service page for one scoped same-day paid trial.
 - Short Script: USD 25 / CNY 179.
 - Focused QA Pass: USD 25 / CNY 179.
 - Quick Fix: USD 30 / CNY 199.
+- Release QA Package: USD 120 / CNY 858; 48-hour critical-flow and API regression pass with retest and release recommendation.
 - Custom work begins after a 50% deposit or funded platform escrow.
 
 ## Digital product
