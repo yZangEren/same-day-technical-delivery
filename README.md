@@ -19,6 +19,8 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
 ## Digital product
 
 - Launch QA Starter Pack: USD 25 / CNY 179.
+- API Documentation Starter Pack: USD 15; reusable Markdown sections for endpoint notes, edge cases, acceptance checks, and release handoffs. Direct checkout:
+  https://yzangeren.github.io/same-day-technical-delivery/checkout/api-docs-starter-pack.html
 - Includes a 66-point launch checklist, an offline interactive workbench,
   structured QA templates, and a read-only page hygiene helper.
 - Public preview:
