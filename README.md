@@ -15,6 +15,7 @@ Public fixed-price service page for one scoped same-day paid trial.
   acceptance checks, release notes, and a Markdown handoff within 24 hours.
 - Release QA Package: USD 120 / CNY 858; 48-hour critical-flow and API regression pass with retest and release recommendation.
 - Launch Weekend QA: USD 250 / CNY 1,790; 72-hour critical-flow and API regression pass with evidence, retest, and release recommendation.
+- Launch Weekend QA direct checkout: https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-weekend-qa.html (250 USDC on Base or 250 USDT on TRON).
 - Custom work begins after a 50% deposit or funded platform escrow.
 
 The Launch Weekend QA service is also available through Contra:
