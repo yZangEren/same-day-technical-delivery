@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">API Documentation Starter Pack</title>
+  <desc id="desc">Reusable Markdown template for endpoint notes, validation, edge cases, and release handoffs.</desc>
+  <rect width="1200" height="630" fill="#f7faf9"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="#14211e"/>
+  <rect x="48" y="48" width="22" height="534" rx="11" fill="#f3c84b"/>
+  <text x="112" y="150" fill="#f3c84b" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="3">READY-TO-COPY PRODUCT</text>
+  <text x="112" y="245" fill="#ffffff" font-family="Arial, sans-serif" font-size="62" font-weight="700">API Documentation</text>
+  <text x="112" y="318" fill="#ffffff" font-family="Arial, sans-serif" font-size="62" font-weight="700">Starter Pack</text>
+  <text x="112" y="392" fill="#dbe8e4" font-family="Arial, sans-serif" font-size="28">Endpoints · edge cases · acceptance checks · handoff</text>
+  <rect x="112" y="454" width="210" height="62" rx="10" fill="#007f64"/>
+  <text x="217" y="495" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">USD 15</text>
+  <text x="1000" y="505" text-anchor="end" fill="#dbe8e4" font-family="Arial, sans-serif" font-size="23">Yi · Same-Day Delivery</text>
+</svg>
