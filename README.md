@@ -28,6 +28,8 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
   https://yzangeren.github.io/same-day-technical-delivery/checkout/api-docs-starter-pack.html
 - API Documentation Starter Pack sample:
   https://yzangeren.github.io/same-day-technical-delivery/preview/api-docs-sprint-sample.md
+- 中文 API 文档冲刺样例（虚构示例）:
+  https://yzangeren.github.io/same-day-technical-delivery/preview/api-docs-sprint-sample-zh.md
 - Public preview:
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-starter-pack-preview.html
 - Interactive 12-check sample:
