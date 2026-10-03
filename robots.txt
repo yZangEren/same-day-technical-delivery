@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yzangeren.github.io/same-day-technical-delivery/sitemap.xml
