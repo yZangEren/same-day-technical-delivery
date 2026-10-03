@@ -7,6 +7,8 @@ Public fixed-price service page for one scoped same-day paid trial.
 - Short Script: USD 25 / CNY 179.
 - Focused QA Pass: USD 25 / CNY 179.
 - Quick Fix: USD 30 / CNY 199.
+- API Docs Sprint: USD 35 / CNY 249; one focused API workflow, edge-case notes,
+  acceptance checks, release notes, and a Markdown handoff within 24 hours.
 - Release QA Package: USD 120 / CNY 858; 48-hour critical-flow and API regression pass with retest and release recommendation.
 - Launch Weekend QA: USD 250 / CNY 1,790; 72-hour critical-flow and API regression pass with evidence, retest, and release recommendation.
 - Custom work begins after a 50% deposit or funded platform escrow.
@@ -23,6 +25,8 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-starter-pack-preview.html
 - Interactive 12-check sample:
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-sample.html
+- API Docs Sprint sample handoff:
+  https://yzangeren.github.io/same-day-technical-delivery/preview/api-docs-sprint-sample.md
 - Hosted buyer checkout (seller payout availability not independently verified):
   https://launchqalab.itch.io/launch-qa-starter-pack
 - Public evaluation release (v1.1.0):
