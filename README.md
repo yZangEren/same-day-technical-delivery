@@ -38,6 +38,8 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
   https://launchqalab.itch.io/launch-qa-starter-pack
 - Public evaluation release (v1.1.0):
   https://github.com/yZangEren/same-day-technical-delivery/releases/tag/v1.1.0
+- Ko-fi purchase (USD 25+):
+  https://ko-fi.com/s/7562e880c7
 - Direct fixed-price crypto checkout:
   https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-qa-starter-pack.html
 - Checkout accepts exactly 25 USDC on Base or 25 USDT on TRON. The page shows
