@@ -296,6 +296,31 @@
       font-weight: 700;
     }
 
+    .template-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .template-grid details {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--white);
+    }
+
+    .template-grid summary {
+      color: var(--ink);
+      font-weight: 760;
+      cursor: pointer;
+    }
+
+    .template-grid details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
     footer {
       padding: 24px 0;
       border-top: 1px solid var(--line);
@@ -312,6 +337,7 @@
       h1 { font-size: 38px; }
       .order-price { padding: 18px 0 0; border-left: 0; border-top: 5px solid var(--yellow); }
       .included, .rail-grid { grid-template-columns: 1fr; }
+      .template-grid { grid-template-columns: 1fr; }
       .payment-card { padding: 22px; }
       .rail-heading { align-items: flex-start; }
       .address-row { grid-template-columns: 1fr; }
@@ -421,6 +447,33 @@
           </article>
         </div>
         <p id="copy-status" class="status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="faq-title">Before you pay</h2>
+          <p>These short answers make the fixed-scope purchase clear before you send a payment.</p>
+        </div>
+        <div class="template-grid">
+          <details open>
+            <summary>What do I receive?</summary>
+            <p>One ZIP containing the 66-point checklist, the offline workbench, reusable defect and handoff templates, and the sample QA report shown in the preview.</p>
+          </details>
+          <details>
+            <summary>Is this a custom QA engagement?</summary>
+            <p>No. This is a ready-to-use digital toolkit. A separate 24-hour release QA service is available from the main service page when you need hands-on testing.</p>
+          </details>
+          <details>
+            <summary>Which network should I use?</summary>
+            <p>Use exactly one rail: 25 USDC on Base or 25 USDT on TRON / TRC20. Do not send another asset or use another network.</p>
+          </details>
+          <details>
+            <summary>How is delivery handled?</summary>
+            <p>After the transfer is independently verified, email the transaction hash and delivery address. The ZIP is sent within one business day; never share a seed phrase or private key.</p>
+          </details>
+        </div>
       </div>
     </section>
 
