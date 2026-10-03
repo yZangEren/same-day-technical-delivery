@@ -58,6 +58,8 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
 - BNB: BNB Smart Chain.
 - TON: TON network.
 
+PayPal is permanently unavailable for this account and is not offered as a direct payment rail. The checkout pages currently expose only the verified Base USDC and TRON USDT routes; China-based buyers can request current WeChat or Alipay instructions after written scope confirmation.
+
 Do not transfer funds before the deliverable, acceptance criteria, amount, and
 network are confirmed in writing. A platform contract must not require a
 premium subscription, staking, a deposit from the freelancer, paid
