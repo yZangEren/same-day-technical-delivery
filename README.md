@@ -9,6 +9,7 @@ Public fixed-price service page for one scoped same-day paid trial.
 
 - Short Script: USD 25 / CNY 179.
 - Focused QA Pass: USD 25 / CNY 179.
+- 30-minute Launch Smoke Check: USD 15; one bounded web flow with a concise pass/fail report and evidence. Direct checkout: https://yzangeren.github.io/same-day-technical-delivery/checkout/launch-smoke-check.html
 - Quick Fix: USD 30 / CNY 199.
 - API Docs Sprint: USD 35 / CNY 249; one focused API workflow, edge-case notes,
   acceptance checks, release notes, and a Markdown handoff within 24 hours.
