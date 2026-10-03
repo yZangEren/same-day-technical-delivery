@@ -2,6 +2,9 @@
 
 Public fixed-price service page for one scoped same-day paid trial.
 
+- English service page: https://yzangeren.github.io/same-day-technical-delivery/
+- 中文服务页: https://yzangeren.github.io/same-day-technical-delivery/zh-cn.html
+
 ## Offers
 
 - Short Script: USD 25 / CNY 179.
@@ -19,16 +22,16 @@ https://contra.com/s/qroOl2Fg-72-hour-launch-qa-and-api-regression
 ## Digital product
 
 - Launch QA Starter Pack: USD 25 / CNY 179.
-- API Documentation Starter Pack: USD 15; reusable Markdown sections for endpoint notes, edge cases, acceptance checks, and release handoffs. Direct checkout:
-  https://yzangeren.github.io/same-day-technical-delivery/checkout/api-docs-starter-pack.html
 - Includes a 66-point launch checklist, an offline interactive workbench,
   structured QA templates, and a read-only page hygiene helper.
+- API Documentation Starter Pack: USD 15; reusable Markdown sections for endpoint notes, edge cases, acceptance checks, and release handoffs. Direct checkout:
+  https://yzangeren.github.io/same-day-technical-delivery/checkout/api-docs-starter-pack.html
+- API Documentation Starter Pack sample:
+  https://yzangeren.github.io/same-day-technical-delivery/preview/api-docs-sprint-sample.md
 - Public preview:
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-starter-pack-preview.html
 - Interactive 12-check sample:
   https://yzangeren.github.io/same-day-technical-delivery/preview/launch-qa-sample.html
-- API Docs Sprint sample handoff:
-  https://yzangeren.github.io/same-day-technical-delivery/preview/api-docs-sprint-sample.md
 - Hosted buyer checkout (seller payout availability not independently verified):
   https://launchqalab.itch.io/launch-qa-starter-pack
 - Public evaluation release (v1.1.0):
